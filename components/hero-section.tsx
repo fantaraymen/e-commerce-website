@@ -21,32 +21,21 @@ export function HeroSection() {
               Découvrez notre collection exclusive de meubles et accessoires de décoration pour créer l&apos;intérieur parfait qui vous ressemble.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="gap-2" asChild>
-                <a href="#produits">
-                  Voir nos produits
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="#contact">
-                  Nous contacter
-                </a>
-              </Button>
-            </div>
+  <Button size="lg" className="gap-2" asChild>
+    <a href="#produits">
+      Voir nos produits
+      <ArrowRight className="w-5 h-5" />
+    </a>
+  </Button>
+</div>
 
             {/* Features */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border">
+            <div className="grid grid-cols-2 gap-4 pt-8 border-t border-border">
               <div className="flex flex-col items-center text-center gap-2">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Truck className="w-6 h-6 text-primary" />
                 </div>
                 <span className="text-sm font-medium text-foreground">Livraison rapide</span>
-              </div>
-              <div className="flex flex-col items-center text-center gap-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-primary" />
-                </div>
-                <span className="text-sm font-medium text-foreground">Garantie 2 ans</span>
               </div>
               <div className="flex flex-col items-center text-center gap-2">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -68,7 +57,6 @@ export function HeroSection() {
                 priority
               />
             </div>
-            {/* Floating card */}
             <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border border-border hidden md:block">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-xl">
@@ -80,7 +68,6 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
-            {/* Price tag */}
             <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-full font-bold shadow-lg">
               -20% Soldes
             </div>

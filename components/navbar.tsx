@@ -27,7 +27,7 @@ export function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              +216 XX XXX XXX
+              +21628167130
             </span>
             <span className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
@@ -35,7 +35,6 @@ export function Navbar() {
             </span>
           </div>
           <div>
-            Livraison gratuite à partir de 500 DT
           </div>
         </div>
       </div>
@@ -97,7 +96,7 @@ export function Navbar() {
                   <div className="pt-4 border-t border-border">
                     <p className="text-sm text-muted-foreground flex items-center gap-2">
                       <Phone className="w-4 h-4" />
-                      +216 XX XXX XXX
+                      +21628167130
                     </p>
                     <p className="text-sm text-muted-foreground flex items-center gap-2 mt-2">
                       <MapPin className="w-4 h-4" />

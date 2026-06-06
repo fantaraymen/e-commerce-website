@@ -97,24 +97,25 @@ export function CartSidebar() {
 
             <div className="border-t border-border pt-4 space-y-4">
               <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Sous-total</span>
-                  <span className="text-foreground">{totalPrice.toLocaleString()} DT</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Livraison</span>
-                  <span className="text-foreground">
-                    {totalPrice >= 500 ? "Gratuite" : "30 DT"}
-                  </span>
-                </div>
-                <Separator />
-                <div className="flex justify-between font-semibold">
-                  <span className="text-foreground">Total</span>
-                  <span className="text-primary text-xl">
-                    {(totalPrice + (totalPrice >= 500 ? 0 : 30)).toLocaleString()} DT
-                  </span>
-                </div>
-              </div>
+  <div className="flex justify-between text-sm">
+    <span className="text-muted-foreground">Sous-total</span>
+    <span className="text-foreground">{totalPrice.toLocaleString()} DT</span>
+  </div>
+
+  <div className="flex justify-between text-sm">
+    <span className="text-muted-foreground">Livraison</span>
+    <span className="text-foreground">8 DT</span>
+  </div>
+
+  <Separator />
+
+  <div className="flex justify-between font-semibold">
+    <span className="text-foreground">Total</span>
+    <span className="text-primary text-xl">
+      {(totalPrice + 8).toLocaleString()} DT
+    </span>
+  </div>
+</div>
 
               <Button asChild size="lg" className="w-full gap-2">
                 <Link href="/checkout" onClick={() => setIsCartOpen(false)}>

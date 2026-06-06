@@ -21,7 +21,7 @@ export default function CheckoutPage() {
   const [isComplete, setIsComplete] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  const shippingCost = totalPrice >= 500 ? 0 : 30
+  const shippingCost = 8
   const finalTotal = totalPrice + shippingCost
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -195,23 +195,12 @@ export default function CheckoutPage() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <RadioGroup
-                    value={paymentMethod}
-                    onValueChange={setPaymentMethod}
-                    className="space-y-3"
-                  >
+                  <RadioGroup value={paymentMethod} onValueChange={setPaymentMethod} className="space-y-3">
                     <div className="flex items-center space-x-3 p-4 border border-border rounded-lg hover:bg-secondary/50 transition-colors">
                       <RadioGroupItem value="delivery" id="delivery" />
                       <Label htmlFor="delivery" className="flex-1 cursor-pointer">
                         <span className="font-medium">Paiement à la livraison</span>
                         <p className="text-sm text-muted-foreground">Payez en espèces à la réception</p>
-                      </Label>
-                    </div>
-                    <div className="flex items-center space-x-3 p-4 border border-border rounded-lg hover:bg-secondary/50 transition-colors">
-                      <RadioGroupItem value="card" id="card" />
-                      <Label htmlFor="card" className="flex-1 cursor-pointer">
-                        <span className="font-medium">Carte bancaire</span>
-                        <p className="text-sm text-muted-foreground">Paiement sécurisé par carte</p>
                       </Label>
                     </div>
                   </RadioGroup>
@@ -224,12 +213,7 @@ export default function CheckoutPage() {
                 </div>
               )}
 
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full"
-                disabled={isSubmitting}
-              >
+              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                 {isSubmitting ? "Traitement en cours..." : `Confirmer la commande - ${finalTotal.toLocaleString()} DT`}
               </Button>
             </form>
@@ -244,46 +228,20 @@ export default function CheckoutPage() {
                 {items.map((item) => (
                   <div key={item.id} className="flex gap-4">
                     <div className="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        fill
-                        className="object-cover"
-                      />
+                      <Image src={item.image} alt={item.name} fill className="object-cover" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-foreground text-sm line-clamp-1">
-                        {item.name}
-                      </h4>
-                      <p className="text-primary font-semibold text-sm">
-                        {item.price.toLocaleString()} DT
-                      </p>
+                      <h4 className="font-medium text-foreground text-sm line-clamp-1">{item.name}</h4>
+                      <p className="text-primary font-semibold text-sm">{item.price.toLocaleString()} DT</p>
                       <div className="flex items-center gap-2 mt-2">
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          className="h-7 w-7"
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                        >
+                        <Button variant="outline" size="icon" className="h-7 w-7" onClick={() => updateQuantity(item.id, item.quantity - 1)}>
                           <Minus className="w-3 h-3" />
                         </Button>
-                        <span className="w-6 text-center text-sm font-medium">
-                          {item.quantity}
-                        </span>
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          className="h-7 w-7"
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                        >
+                        <span className="w-6 text-center text-sm font-medium">{item.quantity}</span>
+                        <Button variant="outline" size="icon" className="h-7 w-7" onClick={() => updateQuantity(item.id, item.quantity + 1)}>
                           <Plus className="w-3 h-3" />
                         </Button>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          className="h-7 w-7 ml-auto text-destructive"
-                          onClick={() => removeFromCart(item.id)}
-                        >
+                        <Button variant="ghost" size="icon" className="h-7 w-7 ml-auto text-destructive" onClick={() => removeFromCart(item.id)}>
                           <Trash2 className="w-3 h-3" />
                         </Button>
                       </div>
@@ -300,28 +258,15 @@ export default function CheckoutPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Livraison</span>
-                    <span className="text-foreground">
-                      {shippingCost === 0 ? (
-                        <span className="text-primary">Gratuite</span>
-                      ) : (
-                        `${shippingCost} DT`
-                      )}
-                    </span>
+                    <span className="text-foreground">8 DT</span>
                   </div>
-                  {totalPrice < 500 && (
-                    <p className="text-xs text-muted-foreground bg-secondary p-2 rounded">
-                      Ajoutez {(500 - totalPrice).toLocaleString()} DT pour bénéficier de la livraison gratuite
-                    </p>
-                  )}
                 </div>
 
                 <Separator />
 
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-foreground">Total</span>
-                  <span className="text-2xl font-bold text-primary">
-                    {finalTotal.toLocaleString()} DT
-                  </span>
+                  <span className="text-2xl font-bold text-primary">{finalTotal.toLocaleString()} DT</span>
                 </div>
               </CardContent>
             </Card>

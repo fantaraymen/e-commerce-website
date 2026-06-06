@@ -111,34 +111,34 @@ export const categories = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sonia Ben Ali",
+    name: "sonia Ben Ali",
     location: "Tunis",
     rating: 5,
-    comment: "Service impeccable et produits de très haute qualité. Ma maison a été complètement transformée grâce à Casa Shop!",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+    comment: "Lberah barka wesletli l banquette, ya3tikom l saha 3al service et surtout qualité du produit 💯",
+    avatar: "https://i.ibb.co/ZRrWW5Jz/505058216-2839404319578329-4974240031999761051-n.jpg"
   },
   {
     id: 2,
-    name: "Mohamed Trabelsi",
+    name: "Soumaya Nabli",
     location: "Sousse",
     rating: 5,
-    comment: "Livraison rapide et le canapé est exactement comme sur les photos. Je recommande vivement!",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+    comment: "❤️​السلام عليكم توا وصلتني الكوموند ربي يباركلكم",
+    avatar: "https://i.ibb.co/DD394CF0/489286305-9407843442667828-4983514240517174301-n.jpg"
   },
   {
     id: 3,
     name: "Amira Gharbi",
     location: "Sfax",
     rating: 5,
-    comment: "Les meilleurs prix pour une qualité exceptionnelle. L'équipe est très professionnelle.",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+    comment: "5dhit men aandkom l kisen w lahkika rapport qualité prix impéccable❤️❤️",
+    avatar: "https://i.ibb.co/d4z3Z124/545196055-17988283814843996-1652015810091033581-n.jpg"
   },
   {
     id: 4,
     name: "Youssef Mansour",
     location: "Bizerte",
     rating: 5,
-    comment: "J'ai meublé tout mon appartement chez Casa Shop. Rapport qualité-prix imbattable!",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+    comment: "ghalta le berasmi yaatikom l saha a khouya❤️",
+    avatar: "https://i.ibb.co/p6wM2Njq/download.jpg"
   }
 ]
