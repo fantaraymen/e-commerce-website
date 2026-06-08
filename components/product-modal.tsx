@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ShoppingCart, Check } from "lucide-react"
+import { ShoppingCart } from "lucide-react"
 import { Product, useCart } from "@/context/cart-context"
 
 interface ProductModalProps {
@@ -47,20 +47,6 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               <p className="text-muted-foreground mb-6">
                 {product.description}
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary" />
-                  Livraison gratuite à partir de 500 DT
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary" />
-                  Garantie 2 ans incluse
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary" />
-                  Retour gratuit sous 14 jours
-                </div>
-              </div>
             </div>
             <div className="space-y-4 pt-6 border-t border-border">
               <div className="flex items-center justify-between">
@@ -69,11 +55,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
                   {product.price.toLocaleString()} DT
                 </span>
               </div>
-              <Button
-                size="lg"
-                className="w-full gap-2"
-                onClick={handleAddToCart}
-              >
+              <Button size="lg" className="w-full gap-2" onClick={handleAddToCart}>
                 <ShoppingCart className="w-5 h-5" />
                 Ajouter au panier
               </Button>
