@@ -6,14 +6,15 @@ export const products: Product[] = [
     name: "Banquette moderne \"vert kaki foncé\"",
     price: 250,
     image: "https://i.ibb.co/Q3XhpC92/Screenshot-2026-06-08-030757.png",
-    category: "Salon",
+    category: "Décoration",
     description: "Banquette moderne en velours vert kaki foncé avec pieds blancs"
   }
 ]
 
 export const categories = [
   "Tous",
-  "décoration",
+  "Salon",
+  "Décoration",
   "Cuisine",
   "Salle de bain"
 ]
@@ -32,23 +33,5 @@ export const testimonials = [
     name: "Soumaya Nabli",
     location: "Sousse",
     rating: 5,
-    comment: "❤️​السلام عليكم توا وصلتني الكوموند ربي يباركلكم",
-    avatar: "https://i.ibb.co/DD394CF0/489286305-9407843442667828-4983514240517174301-n.jpg"
-  },
-  {
-    id: 3,
-    name: "Amira Gharbi",
-    location: "Sfax",
-    rating: 5,
-    comment: "5dhit men aandkom l kisen w lahkika rapport qualité prix impéccable❤️❤️",
-    avatar: "https://i.ibb.co/d4z3Z124/545196055-17988283814843996-1652015810091033581-n.jpg"
-  },
-  {
-    id: 4,
-    name: "Youssef Mansour",
-    location: "Bizerte",
-    rating: 5,
-    comment: "ghalta le berasmi yaatikom l saha a khouya❤️",
-    avatar: "https://i.ibb.co/p6wM2Njq/download.jpg"
-  }
-]
+    comment: "❤️السلام عليكم توا وصلتني الكوموند ربي يباركلكم",
+    avatar: "https://i.ibb.co/DD394CF0/489286305-9407843442667828-49835142405171
