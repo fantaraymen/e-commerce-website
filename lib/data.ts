@@ -1,10 +1,19 @@
 import { Product } from "@/context/cart-context"
 
-export const products: Product[] = []
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Banquette moderne \"vert kaki foncé\"",
+    price: 250,
+    image: "https://i.ibb.co/Q3XhpC92/Screenshot-2026-06-08-030757.png",
+    category: "Salon",
+    description: "Banquette moderne en velours vert kaki foncé avec pieds blancs"
+  }
+]
 
 export const categories = [
   "Tous",
-  "Salon&décoration",
+  "Salon",
   "Cuisine",
   "Salle de bain"
 ]
