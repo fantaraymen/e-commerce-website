@@ -14,7 +14,7 @@ export const products: Product[] = [
 export const categories = [
   "Tous",
   "Salon",
-  "Décoration",
+  "décoration",
   "Cuisine",
   "Salle de bain"
 ]
