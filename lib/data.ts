@@ -8,6 +8,15 @@ export const products: Product[] = [
     image: "https://i.ibb.co/Q3XhpC92/Screenshot-2026-06-08-030757.png",
     category: "décoration",
     description: "Banquette moderne en velours vert kaki foncé avec pieds blancs"
+  },
+  {
+    id: 2,
+    name: "Banquette Rose",
+    price: 115,
+    originalPrice: 150,
+    image: "https://i.ibb.co/0R2FhXbp/Screenshot-2026-06-16-192940.png",
+    category: "décoration",
+    description: "Banquette moderne en velours rose avec pieds blancs"
   }
 ]
 
@@ -33,7 +42,7 @@ export const testimonials = [
     name: "Soumaya Nabli",
     location: "Sousse",
     rating: 5,
-    comment:  "❤️السلام عليكم توا وصلتني الكوموند ربي يباركلكم",
+    comment: "السلام عليكم توا وصلتني الكوموند ربي يباركلكم ❤️",
     avatar: "https://i.ibb.co/DD394CF0/489286305-9407843442667828-4983514240517174301-n.jpg"
   },
   {
@@ -41,7 +50,7 @@ export const testimonials = [
     name: "Amira Gharbi",
     location: "Sfax",
     rating: 5,
-    comment: "5dhit men aandkom l kisen w lahkika rapport qualité prix impéccable❤️❤️",
+    comment: "5dhit men aandkom l kisen w lahkika rapport qualité prix impéccable ❤️",
     avatar: "https://i.ibb.co/d4z3Z124/545196055-17988283814843996-1652015810091033581-n.jpg"
   },
   {
@@ -49,7 +58,7 @@ export const testimonials = [
     name: "Youssef Mansour",
     location: "Bizerte",
     rating: 5,
-    comment: "ghalta le berasmi yaatikom l saha a khouya❤️",
+    comment: "ghalta le berasmi yaatikom l saha a khouya ❤️",
     avatar: "https://i.ibb.co/p6wM2Njq/download.jpg"
   }
 ]
