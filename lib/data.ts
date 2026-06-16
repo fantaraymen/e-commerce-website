@@ -2,7 +2,7 @@ import { Product } from "@/context/cart-context"
 
 export const products: Product[] = [
   {
-   {
+  {
     id: 1,
     name: "Banquette moderne \"vert kaki foncé\"",
     price: 115,
