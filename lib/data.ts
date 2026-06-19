@@ -1,5 +1,5 @@
 import { Product } from "@/context/cart-context"
-
+ 
 export const products: Product[] = [
   {
     id: 1,
@@ -18,17 +18,33 @@ export const products: Product[] = [
     image: "https://i.ibb.co/0R2FhXbp/Screenshot-2026-06-16-192940.png",
     category: "décoration",
     description: "Banquette moderne en velours rose avec pieds blancs"
+  },
+  {
+    id: 3,
+    name: "Verre Bleu Océan",
+    price: 22,
+    image: "https://i.ibb.co/FLVjJq4f/e6e84807-7d91-4c66-bc0b-3478b2409ff4.png",
+    category: "Art de table",
+    description: "Verre en verre strié bleu, élégant et raffiné pour sublimer vos boissons"
+  },
+  {
+    id: 4,
+    name: "Verre Ambre Violine",
+    price: 22,
+    image: "https://i.ibb.co/Wv9RmP0D/2b9e8b55-e4df-476a-8591-091176b8f941.png",
+    category: "Art de table",
+    description: "Verre en verre strié aux reflets ambrés et violets, parfait pour sublimer vos boissons"
   }
 ]
-
+ 
 export const categories = [
   "Tous",
   "Salon",
   "décoration",
-  "Cuisine",
+  "Art de table",
   "Salle de bain"
 ]
-
+ 
 export const testimonials = [
   {
     id: 1,
