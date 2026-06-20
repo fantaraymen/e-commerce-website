@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: "Banquette moderne \"vert kaki foncé\"",
     price: 115,
     originalPrice: 150,
-    image: "https://i.ibb.co/Q3XhpC92/Screenshot-2026-06-08-030757.png",
+    image: "https://i.ibb.co/WN231Nhh/7f974662-c198-4934-a0c8-fd53ae289c04.png",
     category: "décoration",
     description: "Banquette moderne en velours vert kaki foncé avec pieds blancs"
   },
