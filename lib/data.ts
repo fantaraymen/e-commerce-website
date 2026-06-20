@@ -15,7 +15,7 @@ export const products: Product[] = [
     name: "Banquette Rose",
     price: 115,
     originalPrice: 150,
-    image: "https://i.ibb.co/0R2FhXbp/Screenshot-2026-06-16-192940.png",
+    image: "https://i.ibb.co/j9DYsVNW/ed9dc697-5b3f-4328-bbe6-f81b41a2a183.png",
     category: "décoration",
     description: "Banquette moderne en velours rose avec pieds blancs"
   },
